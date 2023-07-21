@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #4e5150;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 36px;
+  width: 70%;
+  margin: 60px auto 52px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto 100px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  width: 60%;
+}
+
+.form-inputs {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.form-inputs > label {
+  width: 100%;
+  color: var(--gray-2, #4f4f4f);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.form-inputs > div {
+  width: 100%;
+  height: 56px;
+
+  border-radius: 12px;
+  border: 1px solid var(--gray-3, #828282);
+  display: flex;
+}
+
+.form-inputs > div > span {
+  padding: 16px 0 16px 12px;
+}
+
+.form-inputs > div > input,
+select {
+  width: 95%;
+  font-size: 16px;
+  padding-left: 12px;
+  background-color: none;
+  border: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.form-inputs > div > input::placeholder,
+select {
+  color: var(--gray-3, #828282);
+  font-size: 16px;
+}
+
+.side-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.special-input {
+  width: 45%;
+}
+
+.form-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-checkbox > label {
+  color: var(--gray-2, #4f4f4f);
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.form-checkbox > input {
+  width: 21px;
+  height: 21px;
+  border-radius: 4px;
+  border: 1px solid var(--gray-3, #828282);
+}
+
+form {
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+input[type="submit"] {
+  color: #fff;
+  background: var(--orange, #f2994a);
+  font-size: 16px;
+
+  width: 166px;
+  height: 54px;
+  border: none;
+  border-radius: 12px;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.cart {
+  min-width: 320px;
+  width: 30%;
+  height: 50%;
+  margin-left: 40px;
+  border-radius: 12px;
+  background: var(--gray-6, #f2f2f2);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.items {
+  width: 90%;
+  margin: 12px;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.item > img {
+  width: 30%;
+  max-width: 132px;
+  border-radius: 13px;
+  margin-right: 20px;
+}
+
+.item > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prices {
+  display: flex;
+}
+
+.curr-price {
+  color: var(--orange, #f2994a);
+  margin-right: 8px;
+}
+
+.prev-price {
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.item-count {
+  width: 100%;
+  background-color: white;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--gray-3, #828282);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.item-count > input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+}
+
+.item-count > div {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(83, 82, 82, 0.1);
+  border-radius: 4px;
+}
+
+footer {
+  color: #bdbdbd;
+  text-align: center;
+  font-size: 14px;
+
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+
+.cart-summary > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.cart-summary > div > p:nth-child(1) {
+  font-size: 18px;
+}
+
+/* input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid green;
+} */
+
+@media (max-width: 390px) {
+  body {
+    padding: 32px 16px;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  main {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form-inputs {
+    margin-bottom: 16px;
+  }
+
+  .form-inputs > label {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  .form-inputs > div {
+    height: 40px;
+  }
+
+  .form-inputs > div > span {
+    padding: 8px 0 16px 12px;
+  }
+  .form-inputs > div > input,
+  select {
+    font-size: 12px;
+  }
+
+  .form-inputs > div > input::placeholder,
+  select {
+    font-size: 12px;
+  }
+
+  .side-inputs {
+    gap: 0 10px;
+  }
+
+  .btn {
+    margin-bottom: 40px;
+  }
+
+  .cart {
+    max-width: 350px;
+    margin: 20px 0 32px 0;
+  }
+  .items {
+    width: 100%;
+  }
+  .item {
+    width: 100%;
+  }
+
+  .curr-price {
+    margin-right: 16px;
+  }
+  .item-count {
+    max-width: 100px;
+  }
+
+  .cart-summary > div {
+    padding: 12px;
+  }
+
+  .cart-summary > div > p:nth-child(1) {
+    font-size: 14px;
+  }
+}
