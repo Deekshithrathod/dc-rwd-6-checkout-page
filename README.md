@@ -36,9 +36,9 @@
 
 ## Overview
 
-|                 Desktop                 |               Mobile                |
-| :-------------------------------------: | :---------------------------------: |
-| ![Project On Desktop](view-desktop.png) | ![Demo On Desktop](view-mobile.png) |
+|                    Desktop                     |                  Mobile                   |
+| :--------------------------------------------: | :---------------------------------------: |
+| ![Project On Desktop](public/demo-desktop.png) | ![Demo On Mobile](public/demo-mobile.png) |
 
 - Where can I see your demo? [here](https://devchallenges-rwd-6.onrender.com)
 - What have you learned/improved?
